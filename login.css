@@ -1,0 +1,49 @@
+body{
+    background-color: darkcyan;
+    margin: 200px;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+#main{
+    border-radius: 50px;
+    border: 2px solid red;
+    background-color: aquamarine;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+button{
+    background-color: green;
+    height: 50px;
+    width: 150px;
+    color: white;
+    font-style:bold;
+    font-size:20px;
+    border-radius: 5px;
+}
+a{
+    color: blue;
+
+}
+input{
+    border-radius: 5px;
+    height: 8%;
+    width: 50%;
+    font-size: 20px;
+}
+::placeholder{
+    color: darkblue;
+    font-size: 20px;
+}
+div{
+    padding: 30px;
+}
+#heading{
+    color:dodgerblue;
+    font-family:monospace;
+    font-size: 45px;
+}
+button:hover{
+    cursor: pointer;
+    border: solid orangered;
+}

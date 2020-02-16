@@ -4,3 +4,7 @@ Description about the working project
 document.body.innerHTML = "<h1>Welcome</h1>";
 
 https://gitforwindows.org/
+
+
+Ref for Modular CSS:
+https://css-tricks.com/css-modules-part-1-need/

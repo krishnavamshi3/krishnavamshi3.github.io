@@ -8,3 +8,5 @@ https://gitforwindows.org/
 
 Ref for Modular CSS:
 https://css-tricks.com/css-modules-part-1-need/
+
+check out - https://www.quora.com/In-JavaScript-how-do-I-read-a-local-JSON-file

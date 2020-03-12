@@ -12,6 +12,12 @@ function onRegister(){
     console.log(file);
 }
 
+var app = express();
+app.get('/register',function(req,res){
+    res.sendFile(__dirname + "/",+"Auth/register.html");
+});
+
+
 function ConnectToDB(){
     var mysql = require('mysql');
     var express = require('express');

@@ -12,17 +12,23 @@ function onRegister(){
     console.log(file);
 }
 
-function exportToJsonFile(){
+function ConnectToDB(){
     var mysql = require('mysql');
+    var express = require('express');
+    var app = express();
     var con = mysql.createConnection({
-        host : "localhost",
-        user : "mahesh",
-        password : "Mahi9652"
+        host : "127.0.0.1",
+        user : "root",
+        password : "enterpi",
+        database : "userdb"
     });
 con.connect(function(err){
     if(err) throw err;
-    console.log("connected");
+    con.query('select * from users',function (arr,result,fields) {
+        if(err) throw err;
+        console.log(result);
+    })
 });
+app.listen(1337);
 }
-
-exportToJsonFile();
+ConnectToDB();

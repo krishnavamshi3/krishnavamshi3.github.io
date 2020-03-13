@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Register</title>
+        <style>
+            .form-control{
+                padding: 8px;
+                width: 300px;
+                margin-top: 10px;
+            }
+        </style>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>   
+    <body>
+        <h1>Register</h1>
+        <form style="margin: 200px" name = 'form' method = 'post' action="register">
+            <div class="form-group" >
+                <div class="form-group">
+                    <input type="text" class="form-control" name="fullname"placeholder="Full Name">
+                  </div>
+                <select name="Branch"  class="form-control">
+                    <option>Select Branch</option>
+                    <option value="CSE">CSE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="MINING">MINING</option>
+                    <option value="ECE">ECE</option>
+                    <option value="IT">IT</option>
+                  </select>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="acadamicYear"placeholder="Acadamic Year">
+                  </div>
+              <input type="email" class="form-control" name="email" placeholder="Email Id" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="password"placeholder="Password">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="confirmPassword"placeholder="Confirm Password">
+              </div>
+
+              <select name="Security" class="form-control">
+                <option>Security Question</option>
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="MINING">MINING</option>
+                <option value="ECE">ECE</option>
+                <option value="IT">IT</option>
+              </select>
+            <button type="submit" class="btn btn-primary">Register</button>
+            <script src = "register.js"></script>
+          </form>
+    </body>
+</html>

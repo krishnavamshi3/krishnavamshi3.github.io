@@ -26,14 +26,3 @@
     /*  path to controller */
     app.post('/Auth/register',registerController.register);
     app.listen(1307);
-var express = require('express');
-var app = express();
-app.get('/',function(req,res){
-    res.sendFile(__dirname + "/",+"index.html");
-});
-
-app.get('/Auth/register.html',function(req,res){
-    res.sendFile(__dirname + "/",+"Auth/register.html");
-});
-
-app.listen(8012);

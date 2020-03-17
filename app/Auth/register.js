@@ -20,10 +20,11 @@ module.exports.register = function (req,res) {
     var encryptedConfirmPassword = cryptr.encrypt(req.body.confirmPassword);
     var users = {
         "name":req.body.fullname,
-        "acadamicYear":req.body.acadamicYear,
+        "academic_year":req.body.acadamicYear,
         "email":req.body.email,
         "password":ecryptedPassword,
-        "confirmPassword":encryptedConfirmPassword
+        "confirmPassword":encryptedConfirmPassword,
+        "security_question":req.body.Security
     }
     con.query('insert into users set ?',users,function(error,result,fields){
         if(error)
@@ -37,7 +38,7 @@ module.exports.register = function (req,res) {
         else{
             res.json({
                 status:true,
-                data:result,
+                data:users,
                 message:'user registered successfully'
             });
         }

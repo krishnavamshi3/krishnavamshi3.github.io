@@ -13,16 +13,13 @@
     app.use(bodyParser.urlencoded({extended:true}));
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
-
-    function redirect()
-    {
-        app.get('/Auth/register.html',function(req,res){
-            res.sendFile(__dirname + "/" + "./Auth/register.html");
-        })
-    }
-    redirect();
+    
+    /* route to register.html */
+    // app.get('/Auth/register',function(req,res){
+    //     res.sendFile(__dirname + "/" + "./Auth/register.html");
+    // })
     /* route to register */
-    app.post('/register.html',registerController.register);
+    app.post('/register',registerController.register);
     /*  path to controller */
     app.post('/Auth/register',registerController.register);
-    app.listen(1307);
+    app.listen(2020);

@@ -31,7 +31,7 @@
     "morgan": "^1.9.1",
     "mysql": "^2.18.1",
     "navigator": "^1.0.1",
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^2.6.1",
     "node-sessionstorage": "^1.0.0",
     "nodemailer": "^6.1.1",
     "pm2": "^3.5.1",
